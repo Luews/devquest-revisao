@@ -1,0 +1,206 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sixtyfour+Convergence&display=swap');
+
+body{
+
+    font-family: "Roboto", serif;
+
+
+    background-image: url(../images/bg-desktop.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: blueviolet;
+}
+
+
+
+/* HEADER */
+
+
+
+
+/* MAIN */
+
+main {
+    padding: 70px;
+}
+
+.divpai{
+    display: flex;
+    flex-direction: row;
+    
+
+} 
+
+
+.texto_e_botao {
+    color: white;
+    padding-left: 15%;
+
+}
+
+.texto_e_botao h2{
+    font-size: 60px
+}
+
+.texto_e_botao p{
+    font-size: 20px ;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.botao{
+    padding: 19px ;
+    border-radius: 25px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 2px 2px 2px black;
+    width: 190px;
+
+    
+}
+
+.botao:hover{
+    background-color:Magenta;
+    color: white
+}
+
+/* FOOTER */
+
+.icones{
+    display: flex;
+    
+    justify-content: end;
+
+    
+}
+
+.icones a{
+    padding: 10px;
+    font-size: 40px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 50%;
+    margin: 10px;
+    transition: background-color 0.3s;
+    
+
+}
+
+.icones a:hover::after {
+    color:Magenta;
+}
+
+.imagem_logo{
+    padding: 55px;
+}
+
+/* PRA CELULAR */
+
+@media  (max-width: 768px){
+
+    body{
+        background-image: url(../images/bg-desktop.svg);
+        background-size: cover;
+
+
+        /* não precisa copiar o css original da pagina desktop, 
+        só colocar um cover e já era */
+    }
+    
+    .imagem img{
+        max-width: 120%;
+        
+        /* aqui é um salvezinho
+        só pra ela se adequar com o tamanho atual da página */
+    }
+
+    .divpai{
+        display: block;
+         
+    }
+
+    .texto_e_botao h2{
+        font-size: 30px;
+        
+    }
+
+    .texto_e_botao p {
+        font-size: 20px;
+    }
+
+    footer{
+        align-items: center;
+        text-align: center;
+    }
+
+ 
+  
+
+}
+
+/* PRA TABLETS
+
+@media (min-width: 768px) and (max-width: 1024px){
+    
+
+} */
+
+/* 
+RESPONSIVO DO CHAT GPT */
+
+/* Layout para telas menores que 768px
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url(../images/bg-mobile.svg);
+        background-size: cover;
+    }
+
+    .divpai {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .texto_e_botao {
+        padding: 0;
+    }
+
+    .texto_e_botao h2 {
+        font-size: 2rem;
+    }
+
+    .texto_e_botao p {
+        font-size: 0.9rem;
+    }
+
+    .botao {
+        font-size: 0.9rem;
+        width: 120px;
+    }
+
+    .imagem img {
+        max-width: 80%;
+    }
+}
+
+/* Layout para telas entre 768px e 1024px */
+/* @media (min-width: 768px) and (max-width: 1024px) {
+    .divpai {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .texto_e_botao {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .texto_e_botao h2 {
+        font-size: 2.2rem;
+    }
+
+    .texto_e_botao p {
+        font-size: 1rem;
+    }
+} */ 
